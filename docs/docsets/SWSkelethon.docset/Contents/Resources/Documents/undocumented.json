@@ -65,6 +65,13 @@
     },
     {
       "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 11,
+      "symbol": "StatusCode",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
       "line": 12,
       "symbol": "StatusCode.ok",
       "symbol_kind": "source.lang.swift.decl.enumelement",
@@ -194,13 +201,6 @@
       "line": 34,
       "symbol": "StatusCode.serverCouldNotBeFound",
       "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
-      "line": 63,
-      "symbol": "ErrorParserProtocol.handleError(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
