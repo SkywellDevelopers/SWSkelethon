@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SkyWellSkelethon
+import SWSkelethon
 
 struct ExampleResponse : APIResponseProtocol {
     typealias T = ExampleModel

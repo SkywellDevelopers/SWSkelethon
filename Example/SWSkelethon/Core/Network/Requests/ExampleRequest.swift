@@ -9,7 +9,7 @@
 import Foundation
 
 import Alamofire
-import SkyWellSkelethon
+import SWSkelethon
 
 struct ExampleRequest:APIRequestProtocol {
     internal var parameters: [String : Any]? = nil

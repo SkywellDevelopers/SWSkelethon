@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SkyWellSkelethon
+import SWSkelethon
 
 struct ExampleErrorParser : ErrorParserProtocol {
     var statusCode: StatusCode = .ok

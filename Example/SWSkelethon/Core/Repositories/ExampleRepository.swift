@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import SkyWellSkelethon
+import SWSkelethon
 
 
 struct ExampleRepository {

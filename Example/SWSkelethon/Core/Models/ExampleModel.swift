@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SkyWellSkelethon
+import SWSkelethon
 
 struct ExampleModel:ModelProtocol, Listable {
     init(resp: DictionaryAlias) {

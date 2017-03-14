@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SkyWellSkelethon
+import SWSkelethon
 
 class ExampleRestAPIClient : RestApiClienProtocol {
     typealias ResponseParser = ExampleResponseParser
