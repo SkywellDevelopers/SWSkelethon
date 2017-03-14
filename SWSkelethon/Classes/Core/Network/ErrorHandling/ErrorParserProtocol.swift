@@ -60,6 +60,10 @@ public protocol ErrorParserProtocol:Swift.Error {
 
 /// Extensions for type cast Swift.Error to ErrorParserProtocol
 public extension ErrorParserProtocol {
+    /// Static function for convert `Swift.Error` to `Self` error
+    ///
+    /// - Parameter error: Swift.Error
+    /// - Returns: error object that conform `ErrorParserProtocol`
     static func handleError(_ error: Swift.Error) -> Self {
         if let myError = error as? Self {
             return myError

@@ -50,7 +50,7 @@ public extension Listable where Self:ModelProtocol {
 
 /// Response protocol
 public protocol APIResponseProtocol {
-    associatedtype Type: ModelProtocol
+    associatedtype Model: ModelProtocol
     init (JSON: DictionaryAlias)
 }
 

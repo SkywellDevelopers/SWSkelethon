@@ -10,7 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the `Example` directory first.
 
 ## Requirements
-iOS 9.3+
+* iOS 9.3 and higher
 
 ## Installation
 
@@ -21,10 +21,13 @@ it, simply add the following line to your Podfile:
 pod `SWSkelethon`
 ```
 
-## Author
+## Usage
 
+Look on [Documentation](https://skywelldevelopers.github.io/SWSkelethon/).
+
+
+## Author
 k.kryzhanovsky@skywell.com.ua
 
 ## License
-
 SWSkelethon is available under the MIT license. See the LICENSE file for more info.

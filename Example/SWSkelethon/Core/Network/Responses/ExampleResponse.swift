@@ -10,8 +10,8 @@ import Foundation
 import SWSkelethon
 
 struct ExampleResponse : APIResponseProtocol {
-    typealias T = ExampleModel
-    var model:Array<T> = Array<T>()
+    typealias Model = ExampleModel
+    var model:Array<Model> = Array<Model>()
     init(JSON: DictionaryAlias) {
 //        model = ExampleModel.getList(//)
     }
