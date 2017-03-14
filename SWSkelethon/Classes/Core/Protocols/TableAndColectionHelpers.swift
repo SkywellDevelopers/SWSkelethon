@@ -14,7 +14,6 @@ import UIKit
 /// - no need to add cell in storyboard or xib.
 /// - need register from code
 
-
 ///EXAMPLE:
 /*
 // registe cell
@@ -24,19 +23,16 @@ func registerCells() {
 
 // get cell
 let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as SWPartnersLinksCell
-
 */
-
 
 /// RegisterCellProtocol view protocol helps to resiter cell for table view or colection view
 public protocol RegisterCellProtocol {
-    func configure() // optioanl. 
+    func configure() // optioanl.
 }
-
 
 /// optional func configure
 extension RegisterCellProtocol {
-    func configure(){}
+    func configure() {}
 }
 
 /// return String ident fron self name
@@ -44,12 +40,11 @@ extension RegisterCellProtocol where Self: UIView {
     static var reuseIdentifier: String {
         return String(describing: self)
     }
-    
-    static var nibName : String {
+
+    static var nibName: String {
         return String(describing: self)
     }
 }
-
 
 /// Register and dequeue cell from table
 extension UITableView {
@@ -60,34 +55,32 @@ extension UITableView {
         self.layoutIfNeeded()
         self.setContentOffset(contentOffset, animated: false)
     }
-    
+
     /// Register cell
     ///
     /// - Parameter _: UITableViewCell.Type that conform RegisterCellProtocol
-    func register<T: UITableViewCell>(_: T.Type) where T: RegisterCellProtocol  {
+    func register<T: UITableViewCell>(_: T.Type) where T: RegisterCellProtocol {
         self.register(T.self, forCellReuseIdentifier: T.reuseIdentifier)
     }
-    
 
     /// Register cell with NIB name. Nib name must be equal to ClassName.
     ///
     /// - Parameter _: UITableViewCell.Type that conform RegisterCellProtocol
-    func registerNib<T: UITableViewCell>(_: T.Type) where T: RegisterCellProtocol  {
+    func registerNib<T: UITableViewCell>(_: T.Type) where T: RegisterCellProtocol {
         guard (Bundle.main.path(forResource: T.nibName, ofType: "nib") != nil) else {
             fatalError("Could not find xib with name: \(T.nibName)")
         }
         self.register(UINib(nibName:T.nibName, bundle:nil), forCellReuseIdentifier: T.reuseIdentifier)
     }
-    
-    
-    func register<T:UITableViewCell,Z:UITableViewCell>(_: T.Type, withNib:Z.Type) where T : RegisterCellProtocol, Z : RegisterCellProtocol {
+
+    func register<T: UITableViewCell, Z: UITableViewCell>(_: T.Type, withNib:Z.Type) where T: RegisterCellProtocol, Z: RegisterCellProtocol {
         guard (Bundle.main.path(forResource: Z.nibName, ofType: "nib") != nil) else {
             fatalError("Could not find xib with name: \(T.nibName)")
         }
         Log.info.log("REGISTER WITH IDENT \(T.reuseIdentifier)")
         self.register(UINib(nibName:Z.nibName, bundle:nil), forCellReuseIdentifier: T.reuseIdentifier)
     }
-    
+
     /// Dequeue cell. CellClass must confrom RegisterCellProtocol
     ///
     /// - Parameter indexPath: indexPath
@@ -103,17 +96,17 @@ extension UITableView {
 
 /// Register and dequeue cell from colection
 extension UICollectionView {
-    func register<T: UICollectionViewCell>(_: T.Type) where T: RegisterCellProtocol  {
+    func register<T: UICollectionViewCell>(_: T.Type) where T: RegisterCellProtocol {
         self.register(T.self, forCellWithReuseIdentifier: T.reuseIdentifier)
     }
-    
-    func registerNib<T: UICollectionViewCell>(_: T.Type) where T: RegisterCellProtocol  {
+
+    func registerNib<T: UICollectionViewCell>(_: T.Type) where T: RegisterCellProtocol {
         guard (Bundle.main.path(forResource: T.nibName, ofType: "nib") != nil) else {
             fatalError("Could not find xib with name: \(T.nibName)")
         }
         self.register(UINib(nibName:T.nibName, bundle:nil), forCellWithReuseIdentifier: T.reuseIdentifier)
     }
-    
+
     func dequeueReusableCell<T: UICollectionViewCell>(forIndexPath indexPath: IndexPath) -> T where T: RegisterCellProtocol {
         guard let cell = dequeueReusableCell(withReuseIdentifier: T.reuseIdentifier, for: indexPath) as? T else {
             fatalError("Could not dequeue cell with identifier: \(T.reuseIdentifier)")
@@ -121,7 +114,3 @@ extension UICollectionView {
         return cell
     }
 }
-
-
-
-

@@ -9,8 +9,9 @@
 import Foundation
 
 public protocol PaginationProtocol {
-    var currentPage : Int {get set}
-    var totalPages : Int {get set}
-    
+    var currentPage: Int {get set}
+    var totalPages: Int {get set}
+
     func getNext()
 }
+

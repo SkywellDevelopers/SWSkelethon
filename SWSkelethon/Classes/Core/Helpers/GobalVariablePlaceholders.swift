@@ -13,5 +13,3 @@ public let intDummy = 0
 public let stringDummy = ""
 public let boolDummy = false
 public let doubleDummy = -1.0
-
-

@@ -7,7 +7,7 @@
 import Foundation
 import Alamofire
 
-/// Statuc codes codes
+// Status codes codes
 public enum StatusCode: Int {
     case ok = 200
     case created = 201

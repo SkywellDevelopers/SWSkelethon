@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Protocols  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">SWSkelethon Docs</a> (39% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">SWSkelethon Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Protocols  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:v11SWSkelethon9boolDummySb">boolDummy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:v11SWSkelethon11doubleDummySd">doubleDummy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:v11SWSkelethon8intDummySi">intDummy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:v11SWSkelethon11stringDummySS">stringDummy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/Log.html">Log</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/RequestStatus.html">RequestStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/StatusCode.html">StatusCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/APIRequestProtocol.html">APIRequestProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/APIResponseProtocol.html">APIResponseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/DataProviderProtocol.html">DataProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ErrorParserProtocol.html">ErrorParserProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Listable.html">Listable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ModelProtocol.html">ModelProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/PaginationProtocol.html">PaginationProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/RealmProtocol.html">RealmProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/RegisterCellProtocol.html">RegisterCellProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/RegisterViewProtocol.html">RegisterViewProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ResponseParserProtocol.html">ResponseParserProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/RestApiClienProtocol.html">RestApiClienProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:P11SWSkelethon8Shadowle">Shadowle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:P11SWSkelethon18StoryboardProtocol">StoryboardProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/UpdateProtocol.html">UpdateProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ViewModelProtocol.html">ViewModelProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon13ModelProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/ModelProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon13ModelProtocol">ModelProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Model protocol</p>
+
+<p>Need to create model from Dictionary</p>
+
+                        <a href="Protocols/ModelProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ModelProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon8Listable"></a>
+                    <a name="//apple_ref/swift/Protocol/Listable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon8Listable">Listable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listable protocol</p>
+
+<p>Need for making Array of ModelProtocol</p>
+
+                        <a href="Protocols/Listable.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Listable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon19APIResponseProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/APIResponseProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon19APIResponseProtocol">APIResponseProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Response protocol</p>
+
+                        <a href="Protocols/APIResponseProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">APIResponseProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon18APIRequestProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/APIRequestProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon18APIRequestProtocol">APIRequestProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Request protocol.</p>
+
+                        <a href="Protocols/APIRequestProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">APIRequestProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon20RestApiClienProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/RestApiClienProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon20RestApiClienProtocol">RestApiClienProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rest Api client protocol
+Required <code>ResponseParser</code> that conform <code><a href="Protocols/ResponseParserProtocol.html">ResponseParserProtocol</a></code> and <code>baseURL</code> of server</p>
+
+                        <a href="Protocols/RestApiClienProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RestApiClienProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon22ResponseParserProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/ResponseParserProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon22ResponseParserProtocol">ResponseParserProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/ResponseParserProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon19ErrorParserProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/ErrorParserProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon19ErrorParserProtocol">ErrorParserProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Error parser protocol</p>
+
+                        <a href="Protocols/ErrorParserProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ErrorParserProtocol</span><span class="p">:</span><span class="kt">Swift</span><span class="o">.</span><span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon18PaginationProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/PaginationProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon18PaginationProtocol">PaginationProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/PaginationProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon13RealmProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/RealmProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon13RealmProtocol">RealmProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/RealmProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon20RegisterViewProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/RegisterViewProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon20RegisterViewProtocol">RegisterViewProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Protocols/RegisterViewProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon8Shadowle"></a>
+                    <a name="//apple_ref/swift/Protocol/Shadowle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon8Shadowle">Shadowle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon18StoryboardProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/StoryboardProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon18StoryboardProtocol">StoryboardProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Storyboard protocol</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StoryboardProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon20RegisterCellProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/RegisterCellProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon20RegisterCellProtocol">RegisterCellProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>RegisterCellProtocol view protocol helps to resiter cell for table view or colection view</p>
+
+                        <a href="Protocols/RegisterCellProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RegisterCellProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon17ViewModelProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/ViewModelProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon17ViewModelProtocol">ViewModelProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>ViewModel Protocol</p>
+
+                        <a href="Protocols/ViewModelProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ViewModelProtocol</span><span class="p">:</span> <span class="kt"><a href="Protocols/UpdateProtocol.html">UpdateProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon14UpdateProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/UpdateProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon14UpdateProtocol">UpdateProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update protocol
+Used for load and reload data from storage (remote or local)</p>
+
+                        <a href="Protocols/UpdateProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">UpdateProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:P11SWSkelethon20DataProviderProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/DataProviderProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:P11SWSkelethon20DataProviderProtocol">DataProviderProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>DataProviderProtocol
+Used for apply data to the object</p>
+
+                        <a href="Protocols/DataProviderProtocol.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">DataProviderProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/SkywellDevelopers/SWSkelethon" target="_blank" rel="external">K.Krizhanovskii</a>. All rights reserved. (Last updated: 2017-03-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

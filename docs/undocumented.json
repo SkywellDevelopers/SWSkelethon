@@ -1,0 +1,460 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Helpers/GobalVariablePlaceholders.swift",
+      "line": 12,
+      "symbol": "intDummy",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Helpers/GobalVariablePlaceholders.swift",
+      "line": 13,
+      "symbol": "stringDummy",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Helpers/GobalVariablePlaceholders.swift",
+      "line": 14,
+      "symbol": "boolDummy",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Helpers/GobalVariablePlaceholders.swift",
+      "line": 15,
+      "symbol": "doubleDummy",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Helpers/Logger.swift",
+      "line": 15,
+      "symbol": "Log.verbose",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Helpers/Logger.swift",
+      "line": 16,
+      "symbol": "Log.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Helpers/Logger.swift",
+      "line": 17,
+      "symbol": "Log.info",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Helpers/Logger.swift",
+      "line": 18,
+      "symbol": "Log.warning",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Helpers/Logger.swift",
+      "line": 19,
+      "symbol": "Log.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 12,
+      "symbol": "StatusCode.ok",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 13,
+      "symbol": "StatusCode.created",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 14,
+      "symbol": "StatusCode.accepted",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 15,
+      "symbol": "StatusCode.noContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 17,
+      "symbol": "StatusCode.badRequest",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 18,
+      "symbol": "StatusCode.badCredentials",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 19,
+      "symbol": "StatusCode.accessForbidden",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 20,
+      "symbol": "StatusCode.objectNotFound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 22,
+      "symbol": "StatusCode.unprocessableEntity",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 23,
+      "symbol": "StatusCode.limitedRequest",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 25,
+      "symbol": "StatusCode.internalServerError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 26,
+      "symbol": "StatusCode.notImplemented",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 27,
+      "symbol": "StatusCode.badGateway",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 28,
+      "symbol": "StatusCode.serviceUnavailable",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 29,
+      "symbol": "StatusCode.gatewayTimeout",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 31,
+      "symbol": "StatusCode.noInternetConnection",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 32,
+      "symbol": "StatusCode.requestTimeout",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 33,
+      "symbol": "StatusCode.internetConnectionWasLost",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 34,
+      "symbol": "StatusCode.serverCouldNotBeFound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/ErrorHandling/ErrorParserProtocol.swift",
+      "line": 63,
+      "symbol": "ErrorParserProtocol.handleError(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
+      "line": 25,
+      "symbol": "ModelProtocol.init(resp:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
+      "line": 26,
+      "symbol": "ModelProtocol.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
+      "line": 54,
+      "symbol": "APIResponseProtocol.init(JSON:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
+      "line": 62,
+      "symbol": "APIRequestProtocol.HTTPMethod",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
+      "line": 63,
+      "symbol": "APIRequestProtocol.parameters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
+      "line": 64,
+      "symbol": "APIRequestProtocol.headers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
+      "line": 65,
+      "symbol": "APIRequestProtocol.path",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
+      "line": 69,
+      "symbol": "APIRequestProtocol.HTTPMethod",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
+      "line": 70,
+      "symbol": "APIRequestProtocol.parameters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
+      "line": 77,
+      "symbol": "RestApiClienProtocol.baseUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIResponseParser.swift",
+      "line": 13,
+      "symbol": "ResponseParserProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIResponseParser.swift",
+      "line": 15,
+      "symbol": "ResponseParserProtocol.parseResponse(response:request:success:failure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/PaginationProtocol.swift",
+      "line": 11,
+      "symbol": "PaginationProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/PaginationProtocol.swift",
+      "line": 12,
+      "symbol": "PaginationProtocol.currentPage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/PaginationProtocol.swift",
+      "line": 13,
+      "symbol": "PaginationProtocol.totalPages",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/PaginationProtocol.swift",
+      "line": 15,
+      "symbol": "PaginationProtocol.getNext()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/RealmProtocol.swift",
+      "line": null,
+      "symbol": "RealmProtocol",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/RealmProtocol.swift",
+      "line": 12,
+      "symbol": "RealmProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/RegisterViewProtocol.swift",
+      "line": 44,
+      "symbol": "RegisterViewProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/RegisterViewProtocol.swift",
+      "line": 45,
+      "symbol": "RegisterViewProtocol.view",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/RegisterViewProtocol.swift",
+      "line": 46,
+      "symbol": "RegisterViewProtocol.configure()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/RegisterViewProtocol.swift",
+      "line": 47,
+      "symbol": "RegisterViewProtocol.configureColors()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/RegisterViewProtocol.swift",
+      "line": 48,
+      "symbol": "RegisterViewProtocol.configureStaticTexts()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ShadowbleProtocol.swift",
+      "line": 12,
+      "symbol": "Shadowle",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/TableAndColectionHelpers.swift",
+      "line": 30,
+      "symbol": "RegisterCellProtocol.configure()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ViewModelProtocol.swift",
+      "line": 14,
+      "symbol": "RequestStatus.loading",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ViewModelProtocol.swift",
+      "line": 15,
+      "symbol": "RequestStatus.success",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ViewModelProtocol.swift",
+      "line": 16,
+      "symbol": "RequestStatus.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ViewModelProtocol.swift",
+      "line": 33,
+      "symbol": "ViewModelProtocol.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ViewModelProtocol.swift",
+      "line": 41,
+      "symbol": "UpdateProtocol.update()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ViewModelProtocol.swift",
+      "line": 42,
+      "symbol": "UpdateProtocol.update(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ViewModelProtocol.swift",
+      "line": 43,
+      "symbol": "UpdateProtocol.update(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ViewModelProtocol.swift",
+      "line": 47,
+      "symbol": "UpdateProtocol.update()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ViewModelProtocol.swift",
+      "line": 48,
+      "symbol": "UpdateProtocol.update(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ViewModelProtocol.swift",
+      "line": 49,
+      "symbol": "UpdateProtocol.update(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Protocols/ViewModelProtocol.swift",
+      "line": 56,
+      "symbol": "DataProviderProtocol.set(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon"
+}

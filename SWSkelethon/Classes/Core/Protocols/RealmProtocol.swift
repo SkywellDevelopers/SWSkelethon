@@ -17,23 +17,23 @@ public extension RealmProtocol {
     ///  Save Realm model with update
     ///
     ///  Parameter model: model
-    public static func saveModelToStorage<M:ModelProtocol>(_ model:M) where M:Object {
+    public static func saveModelToStorage<M: ModelProtocol>(_ model: M) where M:Object {
         self.updateObject(model)
     }
-    
+
     ///  Save Realm Array model with update
     ///
     /// - Parameter model: Array  of model
-    public static func saveModelArrayToStorage<M:ModelProtocol>(_ array : Array<M>) where M : Object {
+    public static func saveModelArrayToStorage<M: ModelProtocol>(_ array: Array<M>) where M: Object {
         for item in array {
             self.updateObject(item)
         }
     }
-    
+
     ///  Update Realm Array model with update
     ///
     /// - Parameter model: model
-    public static func updateObject<M:ModelProtocol>(_ model:M) where M:Object  {
+    public static func updateObject<M: ModelProtocol>(_ model: M) where M: Object {
         do {
             let r = try Realm()
             try r.write {
@@ -43,17 +43,17 @@ public extension RealmProtocol {
             Log.error.log("RealmSavebale: error \(error.localizedDescription) with saving type \(M.self)")
         }
     }
-    
+
     /// Remove data from table
     ///
     /// - Parameter type: Object.Type
-    public static func removeFrom<R:Object>(_ type:R.Type) {
+    public static func removeFrom<R: Object>(_ type: R.Type) {
         do {
             let items  = try Realm().objects(type.self)
-            let realm = try! Realm()
-            
+            let realm = try Realm()
+
             for item in items {
-                try! realm.write {
+                try realm.write {
                     realm.delete(item)
                 }
             }
@@ -61,14 +61,16 @@ public extension RealmProtocol {
             Log.warning.log("\(type.self) not created")
         }
     }
-    
+
     /// Fetch all items that conform NSPredicate
     ///
     /// - Parameters:
     ///   - type: Realm Object type
     ///   - predicate: NSPredicate
     ///   - success: array of model
-    public static func fetchItems<M:ModelProtocol>(_ type:M.Type,predicate:NSPredicate,success:(Array<M>)->()) where M:Object {
+    public static func fetchItems<M: ModelProtocol>(_ type: M.Type,
+                                                    predicate: NSPredicate,
+                                                    success: (Array<M>)->Void) where M: Object {
         Log.info.log("Fetching items with predicate \(predicate)")
         do {
             let cattegories  = try Realm().objects(M.self).filter(predicate)
@@ -81,13 +83,17 @@ public extension RealmProtocol {
             Log.error.log("RealmFetcheble: error with type \(type)")
         }
     }
-    
+
     /// Fetch all items
     ///
     /// - Parameters:
     ///   - type: Realm Object type
     ///   - success: array of model
-    public static func fetchAllItems<M:ModelProtocol>(_ type:M.Type, success:(Array<M>)->(), failure: @escaping ResponseHandler) where M:Object {
+    public static func fetchAllItems<M: ModelProtocol>(
+                                                      _ type: M.Type,
+                                                      success: (Array<M>)->Void,
+                                                      failure: @escaping ResponseHandler
+                                                      ) where M: Object {
         do {
             let cattegories  = try Realm().objects(M.self)
             var resultArray = Array<M>()
