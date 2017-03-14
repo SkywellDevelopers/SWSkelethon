@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SWSkelethon_Example' do
+  pod 'SWSkelethon', :path => '../'
+
+  target 'SWSkelethon_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
