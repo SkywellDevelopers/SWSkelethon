@@ -1,15 +1,7 @@
-#
-# Be sure to run `pod lib lint SWSkelethon.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'SWSkelethon'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SWSkelethon.'
+s.name             = 'SWSkelethon'
+s.version          = '0.2.0'
+s.summary          = 'Core protocols'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +9,23 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.description      = <<-DESC
+List of used protocols
+DESC
 
-  s.homepage         = 'https://github.com/k.krizhanovskii@gmail.com/SWSkelethon'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'k.krizhanovskii@gmail.com' => 'kk@starladder.tv' }
-  s.source           = { :git => 'https://github.com/k.krizhanovskii@gmail.com/SWSkelethon.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.homepage         = 'https://github.com/SkywellDevelopers/SWSkelethon'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'K.Krizhanovskii'=> 'k.kryzhanovsky@skywell.com.ua' }
+s.source           = { :git => 'https://github.com/SkywellDevelopers/SWSkelethon.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SWSkelethon/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SWSkelethon' => ['SWSkelethon/Assets/*.png']
-  # }
+s.source_files = 'SWSkelethon/Classes/**/*'
+s.framework = 'Foundation'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.dependency 'Alamofire', '4.4.0'
+s.dependency 'AlamofireImage', '3.2'
+s.dependency 'RxSwift',    '3.2'
+s.dependency 'RxCocoa',    '3.2'
+s.dependency 'RealmSwift', '2.4.3'
 end
