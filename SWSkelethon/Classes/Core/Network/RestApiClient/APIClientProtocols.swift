@@ -95,15 +95,15 @@ public extension RestApiClienProtocol {
         let requestPath = "\(baseUrl)\(request.path)"
 
         Log.verbose.log("-------")
-        Log.verbose.log("request \(requestPath)")
-        Log.verbose.log("Parameters:", request.parameters)
-        Log.verbose.log("method \(request.HTTPMethod)")
-        Log.verbose.log("Headers:", request.headers)
+        Log.verbose.log("Request \(requestPath)")
+        Log.verbose.log("Parameters:", parameters: request.parameters)
+        Log.verbose.log("Method \(request.HTTPMethod)")
+        Log.verbose.log("Headers:", parameters: request.headers)
         Log.verbose.log("-------")
 
         return Alamofire.request(requestPath, method: request.HTTPMethod, parameters: request.parameters, encoding: encoding, headers: request.headers).responseJSON { response in
             Log.verbose.log("-------")
-            Log.verbose.log("response for \(requestPath)")
+            Log.verbose.log("Response for \(requestPath)")
             Log.verbose.log(response.value ?? "no response")
             Log.verbose.log("-------")
             ResponseParser.parseResponse(response: response, request: request, success: success, failure: failure)
@@ -121,15 +121,15 @@ public extension RestApiClienProtocol {
             let requestPath = "\(self.baseUrl)\(request.path)"
 
             Log.verbose.log("-------")
-            Log.verbose.log("request \(requestPath)")
-            Log.verbose.log("Parameters:", request.parameters)
-            Log.verbose.log("method \(request.HTTPMethod)")
-            Log.verbose.log("Headers:", request.headers)
+            Log.verbose.log("Request \(requestPath)")
+            Log.verbose.log("Parameters:", parameters: request.parameters)
+            Log.verbose.log("Method \(request.HTTPMethod)")
+            Log.verbose.log("Headers:", parameters: request.headers)
             Log.verbose.log("-------")
 
             let request = Alamofire.request(requestPath, method: request.HTTPMethod, parameters: request.parameters, encoding: encoding, headers: request.headers).responseJSON { response in
                 Log.verbose.log("-------")
-                Log.verbose.log("response for \(requestPath)")
+                Log.verbose.log("Response for \(requestPath)")
                 Log.verbose.log(response.value ?? "no response")
                 Log.verbose.log("-------")
 

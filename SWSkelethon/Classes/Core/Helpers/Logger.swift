@@ -12,46 +12,62 @@ import UIKit
 /// Log
 /// Need for `print` to console with `emoji`
 public enum Log: String {
-    case verbose = "💜"
-    case debug = "💚"
-    case info = "💙"
-    case warning = "💛"
-    case error = "❤️"
+    case verbose = "💜 VERBOSE"
+    case debug = "💚 DEBUG"
+    case info = "💙 INFO"
+    case warning = "💛 WARNING"
+    case error = "❤️ ERROR"
 
-    /// Log string
-    /// - Parameter message: string that be printed in console
-    public func log(_ message: String) {
-        dPrint("\(self.rawValue): \(message)")
-    }
-
-    /// Log items
-    /// - Parameter message: items that be printed in console
-    public func log(_ items: Any...) {
-        dPrint("\(self.rawValue): \(items)")
+    /// Log items in console. Print only in *debug* mode.
+    /// In console its look like: 💚 DEBUG: ViewController.swift.18:viewDidLoad(): ATATAT
+    ///
+    /// - Parameters:
+    ///   - items: items for print
+    ///   - file: file name where `log` was called
+    ///   - line: line where `log` was called
+    ///   - function: function name where `log` was called
+    public func log(_ items: Any..., file: String = #file, line: Int = #line, function: String = #function) {
+        let shortFile = file.components(separatedBy: "/").last ?? file
+        var result = "\(self.rawValue): \(shortFile).\(line):\(function): "
+        items.forEach { (item) in
+            result.append("\(item) ")
+        }
+        dPrint(result)
     }
 
     /// Log dictionary objects.
+    /// In console its look like:
+    /// ---------------------------------------------------------------------
+    /// 💙 INFO: ViewController.swift.20:viewDidLoad(): Headers
+    /// key : value
+    /// Header : accept
+    /// ---------------------------------------------------------------------
     ///
-    /// - Parameters:
+    ///  - Parameters:
     ///   - name: Name of grouped. Example: `Headers`
     ///   - parameters: Dictionary. Example `["Accept-Lnaguage":"ru"]`
-    public func log(_ name: String, parameters: DictionaryAlias?) {
-        dPrint("----")
-        dPrint(name)
+    ///   - file: file name where `log` was called
+    ///   - line: line where `log` was called
+    ///   - function: function name where `log` was called
+    public func log(_ name:String, parameters:DictionaryAlias?, file: String = #file, line: Int = #line, function: String = #function) {
+        dPrint("---------------------------------------------------------------------")
+        self.log(name, file: file, line: line, function: function)
         guard let _ = parameters else {
             dPrint("none \n----")
             return
         }
-        dPrint("key: value")
-        for (key, value) in parameters! {
+        dPrint("key : value")
+        for (key,value) in parameters! {
             dPrint("\(key) : \(value)")
         }
-        dPrint("----")
+        dPrint("---------------------------------------------------------------------")
     }
 }
 
-func dPrint(_ items: Any...) {
+fileprivate func dPrint(_ items: Any...) {
     #if DEBUG
-        print(items)
+        items.forEach({item in
+            print(item)
+        })
     #endif
 }
