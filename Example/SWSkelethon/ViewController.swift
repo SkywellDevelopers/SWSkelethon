@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import SWSkelethon
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        Log.debug.log("Your first log!")
     }
 
     override func didReceiveMemoryWarning() {

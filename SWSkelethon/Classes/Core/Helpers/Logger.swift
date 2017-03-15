@@ -65,9 +65,7 @@ public enum Log: String {
 }
 
 fileprivate func dPrint(_ items: Any...) {
-    #if DEBUG
         items.forEach({item in
             print(item)
         })
-    #endif
 }
