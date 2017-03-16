@@ -48,6 +48,14 @@ public protocol ErrorParserProtocol:Swift.Error {
     
     /// init with status code and message
     init(_ statusCode: StatusCode, message: String)
+    
+    ///
+    /// Parse Error json from server and return Error class
+    ///
+    /// - Parameter JSON: JSON response from server
+    /// - Returns: Self Error class
+    static func parseError(_ JSON: AnyObject) -> Self
+    
 }
 
 /// Extensions for type cast Swift.Error to ErrorParserProtocol
