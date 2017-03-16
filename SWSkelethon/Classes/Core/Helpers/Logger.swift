@@ -18,7 +18,7 @@ public enum Log: String {
     case warning = "💛 WARNING"
     case error = "❤️ ERROR"
 
-    /// Log items in console. Print only in *debug* mode.
+    /// Log items in console. Only in *debug* mode.
     /// In console its look like: 💚 DEBUG: ViewController.swift.18:viewDidLoad(): ATATAT
     ///
     /// - Parameters:
@@ -65,7 +65,9 @@ public enum Log: String {
 }
 
 fileprivate func dPrint(_ items: Any...) {
+    #if DEBUG
         items.forEach({item in
-            print(item)
+             Swift.print(item)
         })
+    #endif
 }
