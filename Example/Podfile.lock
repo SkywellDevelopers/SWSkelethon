@@ -10,7 +10,7 @@ PODS:
   - RxCocoa (3.2.0):
     - RxSwift (~> 3.1)
   - RxSwift (3.2.0)
-  - SWSkelethon (0.2.2):
+  - SWSkelethon (0.2.5):
     - Alamofire (= 4.4.0)
     - AlamofireImage (= 3.2)
     - RealmSwift (= 2.4.3)
@@ -31,8 +31,8 @@ SPEC CHECKSUMS:
   RealmSwift: 30d49739ccb3385d201242736ca4dda56aec9dfc
   RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
-  SWSkelethon: 9da19d5a42354fae4b411ee8e6c38d43060ba7a7
+  SWSkelethon: d070e56ed1fb7e75a047347e3e12738432e031a9
 
-PODFILE CHECKSUM: 5d0f8179c94e16d35bcbde8620c044c1e6e14428
+PODFILE CHECKSUM: c4e908d7539efab0a5b7d165d902f38c8bf6e07f
 
 COCOAPODS: 1.2.0

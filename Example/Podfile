@@ -5,7 +5,7 @@ target 'SWSkelethon_Example' do
 
   target 'SWSkelethon_Tests' do
     inherit! :search_paths
-
     
   end
 end
+
