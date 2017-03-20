@@ -13,7 +13,7 @@ public protocol Shadowle {}
 extension UIView : Shadowle {}
 
 extension Shadowle where Self:UIView {
-    func addShadowWith(size: CGSize, color: UIColor = .gray, radius: CGFloat = 1, shadowOpacity: Double = 0.8) {
+    public func addShadowWith(size: CGSize, color: UIColor = .gray, radius: CGFloat = 1, shadowOpacity: Double = 0.8) {
         self.layer.shadowColor = color.cgColor
         self.layer.shadowOffset = size
         self.layer.shadowOpacity = Float(shadowOpacity)
