@@ -205,86 +205,72 @@
     },
     {
       "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
-      "line": 25,
+      "line": 24,
       "symbol": "ModelProtocol.init(resp:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
-      "line": 26,
+      "line": 25,
       "symbol": "ModelProtocol.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
-      "line": 54,
+      "line": 53,
       "symbol": "APIResponseProtocol.init(JSON:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
-      "line": 62,
+      "line": 61,
       "symbol": "APIRequestProtocol.HTTPMethod",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
+      "line": 62,
+      "symbol": "APIRequestProtocol.parameters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
       "line": 63,
-      "symbol": "APIRequestProtocol.parameters",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
-      "line": 64,
       "symbol": "APIRequestProtocol.headers",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
-      "line": 65,
+      "line": 64,
       "symbol": "APIRequestProtocol.path",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
-      "line": 69,
+      "line": 68,
       "symbol": "APIRequestProtocol.HTTPMethod",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
-      "line": 70,
+      "line": 69,
       "symbol": "APIRequestProtocol.parameters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIClientProtocols.swift",
-      "line": 77,
+      "line": 76,
       "symbol": "RestApiClienProtocol.baseUrl",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIResponseParser.swift",
-      "line": 13,
-      "symbol": "ResponseParserProtocol",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/admin/Documents/SkeWell/cocoapods/SWSkelethon/SWSkelethon/Classes/Core/Network/RestApiClient/APIResponseParser.swift",
-      "line": 15,
-      "symbol": "ResponseParserProtocol.parseResponse(response:request:success:failure:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {

@@ -48,18 +48,18 @@ public protocol RegisterViewProtocol {
     func configureStaticTexts() // optional . Use this function for perform and reload texts
 }
 
-extension RegisterViewProtocol {
+public extension RegisterViewProtocol {
     func configureColors() {}
     func configureStaticTexts() {}
 }
 
-extension RegisterViewProtocol where Self:UIView {
-    static var nibName: String {
+public extension RegisterViewProtocol where Self:UIView {
+    public static var nibName: String {
         return String(describing: self)
     }
 
     /// Returns view from nib or create new view programaticaly
-    func xibSetuView() -> UIView {
+    public func xibSetuView() -> UIView {
         let nib = UINib(nibName: Self.nibName, bundle: nil)
 
         var view: UIView

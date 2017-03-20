@@ -8,14 +8,13 @@
 
 import UIKit
 import SWSkelethon
+import RealmSwift
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         Log.debug.log("Your first log!")
-        
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,11 +29,15 @@ class ViewController: UIViewController {
 }
 
 
-class ErrorParser : ErrorParserProtocol {
-    var statusCode: StatusCode
-    var message: String
-    required init(_ statusCode: StatusCode, message: String) {
-        self.statusCode = statusCode
-        self.message = message
+
+
+class MyModel : Object {
+    dynamic var x : String?
+    
+    convenience init(resp:DictionaryAlias) {
+        self.init()
+        self.x = resp[""] as? String ?? stringDummy
+        
+        
     }
 }

@@ -8,11 +8,15 @@
 
 import Foundation
 import SWSkelethon
+import RealmSwift
 
-struct ExampleModel:ModelProtocol, Listable {
-    init(resp: DictionaryAlias) {
+
+class ExampleModel:Object,ModelProtocol, Listable {
+    convenience required init(resp: DictionaryAlias) {
+        self.init()
     }
-    init() {
+    convenience required init() {
+        self.init()
     }
 }
 

@@ -15,7 +15,6 @@ import RxCocoa
 public typealias ArrayOfDictionaries = Array<[String: Any]>
 public typealias DictionaryAlias = [String: Any]
 public typealias DictionaryAliasHashable = [AnyHashable: Any]
-public typealias Method = Alamofire.HTTPMethod
 public typealias ResponseHandler = (ErrorParserProtocol) -> Void
 
 /// Model protocol
@@ -59,14 +58,14 @@ public protocol APIRequestProtocol {
     /// Response Type that conform `APIResponseProtocol`
     associatedtype Response: APIResponseProtocol
 
-    var HTTPMethod: Method { get }
+    var HTTPMethod: Alamofire.HTTPMethod { get }
     var parameters: [String: Any]? {get}
     var headers: [String: String] {get set}
     var path: String { get }
 }
 
 public extension APIRequestProtocol {
-    var HTTPMethod: Method { return .get }
+    var HTTPMethod: Alamofire.HTTPMethod { return .get }
     var parameters: [String: Any]? { return nil }
 }
 
