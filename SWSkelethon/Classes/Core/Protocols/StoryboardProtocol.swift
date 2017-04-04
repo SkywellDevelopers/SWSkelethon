@@ -17,7 +17,7 @@ public protocol StoryboardProtocol {
 
 
 public extension StoryboardProtocol where Self:UIViewController {
-    static var storyboard: UIStoryboard {
+    private static var storyboard: UIStoryboard {
         return UIStoryboard(name: Self.storyboardName, bundle: nil)
     }
     
