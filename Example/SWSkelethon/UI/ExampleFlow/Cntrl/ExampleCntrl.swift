@@ -56,11 +56,18 @@ class ExampleCntrl: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = ExampleListViewModel()
+        self.update()
     }
 }
 
-extension ExampleCntrl : UpdateProtocol {
+extension ExampleCntrl: UpdateProtocol {
     func update() {
         self.viewModel.update()
+    }
+}
+
+extension ExampleCntrl: StoryboardProtocol {
+    static var storyboardName: String {
+        return "Main"
     }
 }

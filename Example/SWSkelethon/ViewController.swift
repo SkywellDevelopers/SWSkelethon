@@ -29,15 +29,3 @@ class ViewController: UIViewController {
 }
 
 
-
-
-class MyModel : Object {
-    dynamic var x : String?
-    
-    convenience init(resp:DictionaryAlias) {
-        self.init()
-        self.x = resp[""] as? String ?? stringDummy
-        
-        
-    }
-}

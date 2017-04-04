@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SWSkelethon
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.window?.rootViewController = ExampleCntrl.instantiateInitialViewController()
+        self.window?.makeKeyAndVisible()
         return true
     }
 

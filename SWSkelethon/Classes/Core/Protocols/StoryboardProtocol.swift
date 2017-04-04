@@ -9,17 +9,24 @@
 import Foundation
 import UIKit
 
+
 /// Storyboard protocol
-public protocol StoryboardProtocol{}
+public protocol StoryboardProtocol {
+    static var storyboardName: String {get}
+}
+
 
 public extension StoryboardProtocol where Self:UIViewController {
+    static var storyboard: UIStoryboard {
+        return UIStoryboard(name: Self.storyboardName, bundle: nil)
+    }
+    
     /// try get initial storyboard cntrl
     ///
     /// - Returns: UIVIewController type
-    public static func storyBoardControler() -> Self {
-        let sb = UIStoryboard(name: String(describing: Self.self), bundle: nil)
+    public static func instantiateInitialViewController() -> Self {
 
-        guard let cntrl = sb.instantiateInitialViewController() as? Self else {
+        guard let cntrl = storyboard.instantiateInitialViewController() as? Self else {
             fatalError("Could not find contoller for \(String(describing: Self.self))")
         }
         return cntrl
@@ -29,8 +36,7 @@ public extension StoryboardProtocol where Self:UIViewController {
     ///
     /// - Returns: UINavigationController type
     public static func storyBoardWithNavigationContoller<T: UINavigationController>() -> T {
-        let sb = UIStoryboard(name: String(describing: Self.self), bundle: nil)
-        guard let cntrl = sb.instantiateInitialViewController() as? T else {
+        guard let cntrl = storyboard.instantiateInitialViewController() as? T else {
             fatalError("Could not find navigation for \(String(describing: Self.self))")
         }
         return cntrl
@@ -40,8 +46,7 @@ public extension StoryboardProtocol where Self:UIViewController {
     ///
     /// - Returns: UITabBarController type
     public static func storyBoardWithTabBarController<T: UITabBarController>() -> T {
-        let sb = UIStoryboard(name: String(describing: Self.self), bundle: nil)
-        guard let cntrl = sb.instantiateInitialViewController() as? T else {
+        guard let cntrl = storyboard.instantiateInitialViewController() as? T else {
             fatalError("Could not find tabbarcontroller for \(String(describing: Self.self))")
         }
 
@@ -55,7 +60,7 @@ public extension StoryboardProtocol where Self:UIViewController {
     ///
     /// - Returns: Couple of UIViewController and UINavigationController
     public static func storyboardControllerInsideContainer(_ navigation: UINavigationController.Type) -> (Self, UINavigationController) {
-        let cntrl = Self.storyBoardControler()
+        let cntrl = Self.instantiateInitialViewController()
         let nav = navigation.init(rootViewController: cntrl)
         return (cntrl, nav)
 
