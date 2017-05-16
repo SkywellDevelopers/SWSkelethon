@@ -17,14 +17,14 @@ public extension RealmProtocol {
     ///  Save Realm model with update
     ///
     ///  Parameter model: model
-    public static func saveModelToStorage<M: ModelProtocol>(_ model: M) where M:Object {
+    public static func saveModelToStorage<M: Object>(_ model: M) {
         self.updateObject(model)
     }
 
     ///  Save Realm Array model with update
     ///
     /// - Parameter model: Array  of model
-    public static func saveModelArrayToStorage<M: ModelProtocol>(_ array: Array<M>) where M: Object {
+    public static func saveModelArrayToStorage<M: Object>(_ array: Array<M>) {
         for item in array {
             self.updateObject(item)
         }
@@ -33,7 +33,7 @@ public extension RealmProtocol {
     ///  Update Realm Array model with update
     ///
     /// - Parameter model: model
-    public static func updateObject<M: ModelProtocol>(_ model: M) where M: Object {
+    public static func updateObject<M: Object>(_ model: M) {
         do {
             let r = try Realm()
             try r.write {
@@ -68,9 +68,9 @@ public extension RealmProtocol {
     ///   - type: Realm Object type
     ///   - predicate: NSPredicate
     ///   - success: array of model
-    public static func fetchItems<M: ModelProtocol>(_ type: M.Type,
+    public static func fetchItems<M: Object>(_ type: M.Type,
                                                     predicate: NSPredicate,
-                                                    success: (Array<M>)->Void) where M: Object {
+                                                    success: (Array<M>)->Void)  {
         Log.info.log("Fetching items with predicate \(predicate)")
         do {
             let cattegories  = try Realm().objects(M.self).filter(predicate)
@@ -89,16 +89,16 @@ public extension RealmProtocol {
     /// - Parameters:
     ///   - type: Realm Object type
     ///   - success: array of model
-    public static func fetchAllItems<M: ModelProtocol>(
+    public static func fetchAllItems<M: Object>(
                                                       _ type: M.Type,
                                                       success: (Array<M>)->Void,
                                                       failure: @escaping ResponseHandler
-                                                      ) where M: Object {
+                                                      )  {
         do {
-            let cattegories  = try Realm().objects(M.self)
+            let objects  = try Realm().objects(M.self)
             var resultArray = Array<M>()
-            for cattegiry in cattegories {
-                resultArray.append(cattegiry)
+            for obj in objects {
+                resultArray.append(obj)
             }
             success(resultArray)
         } catch {
