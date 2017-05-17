@@ -44,10 +44,10 @@ public extension RealmProtocol {
         }
     }
 
-    /// Remove data from table
+    /// Remove all data from table
     ///
     /// - Parameter type: Object.Type
-    public static func removeFrom<R: Object>(_ type: R.Type) {
+    public static func removeAllDataFrom<R: Object>(_ type: R.Type) {
         do {
             let items  = try Realm().objects(type.self)
             let realm = try Realm()
@@ -58,7 +58,21 @@ public extension RealmProtocol {
                 }
             }
         } catch {
-            Log.warning.log("\(type.self) not created")
+            Log.warning.log("Can't delete all data")
+        }
+    }
+    
+    /// Remove sibgle object
+    ///
+    /// - Parameter object: Object to be removed
+    public static func removeObject<R: Object>(_ object: R) {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.delete(object)
+            }
+        } catch {
+            Log.warning.log("Cannot delete object \(object)")
         }
     }
 
