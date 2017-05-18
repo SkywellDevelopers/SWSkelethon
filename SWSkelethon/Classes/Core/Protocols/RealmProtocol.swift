@@ -40,7 +40,7 @@ public extension RealmProtocol {
                 r.add(model, update: true)
             }
         } catch {
-            Log.error.log("RealmSavebale: error \(error.localizedDescription) with saving type \(M.self)")
+            Log.error.log("RealmProtocol: error \(error.localizedDescription) with saving type \(M.self)")
         }
     }
 
@@ -58,7 +58,7 @@ public extension RealmProtocol {
                 }
             }
         } catch {
-            Log.warning.log("Can't delete all data")
+            Log.warning.log("RealmProtocol: error \(error.localizedDescription). Can't delete all data")
         }
     }
     
@@ -72,7 +72,7 @@ public extension RealmProtocol {
                 realm.delete(object)
             }
         } catch {
-            Log.warning.log("Cannot delete object \(object)")
+            Log.warning.log("RealmProtocol: error \(error.localizedDescription). Cannot delete object \(object)")
         }
     }
 
@@ -85,7 +85,7 @@ public extension RealmProtocol {
     public static func fetchItems<M: Object>(_ type: M.Type,
                                                     predicate: NSPredicate,
                                                     success: (Array<M>)->Void)  {
-        Log.info.log("Fetching items with predicate \(predicate)")
+        Log.info.log("RealmProtocol: Fetching items with predicate \(predicate)")
         do {
             let cattegories  = try Realm().objects(M.self).filter(predicate)
             var resultArray = Array<M>()
@@ -94,7 +94,7 @@ public extension RealmProtocol {
             }
             success(resultArray)
         } catch {
-            Log.error.log("RealmFetcheble: error with type \(type)")
+            Log.error.log("RealmProtocol: error \(error.localizedDescription), type \(type)")
         }
     }
 
@@ -116,8 +116,8 @@ public extension RealmProtocol {
             }
             success(resultArray)
         } catch {
-            Log.error.log("RealmFetcheble: error with type \(M.self)")
-            failure(ErrorResponse(.objectNotFound, message: "RealmFetcheble: error with type \(M.self)"))
+            Log.error.log("RealmProtocol: error \(error.localizedDescription), type \(M.self)")
+            failure(ErrorResponse(.objectNotFound, message: "RealmProtocol: error \(error.localizedDescription), type \(M.self)"))
         }
     }
 }
