@@ -17,22 +17,25 @@ public extension RealmProtocol {
     ///  Save Realm model with update
     ///
     ///  Parameter model: model
-    public static func saveModelToStorage<M: Object>(_ model: M) {
-        self.updateObject(model)
+    /// - Parameter update: update flag
+    public static func saveModelToStorage<M: Object>(_ model: M, withUpdate update: Bool = true) {
+        self.saveObject(model, withUpdate: update)
     }
 
     ///  Save Realm Array model with update
     ///
     /// - Parameter model: Array  of model
-    public static func saveModelArrayToStorage<M: Object>(_ array: Array<M>) {
-        for item in array {
-            self.updateObject(item)
+    /// - Parameter update: update flag
+    public static func saveModelArrayToStorage<M: Object>(_ array: Array<M>, withUpdate update: Bool = true) {
+        for model in array {
+            self.saveObject(model, withUpdate: update)
         }
     }
 
     ///  Update Realm Array model with update
     ///
     /// - Parameter model: model
+    @available(*, deprecated, message: "Use saveObject `func saveObject<M: Object>(_ model: M, withUpdate update:Bool = false)`")
     public static func updateObject<M: Object>(_ model: M) {
         do {
             let r = try Realm()
@@ -43,6 +46,24 @@ public extension RealmProtocol {
             Log.error.log("RealmProtocol: error \(error.localizedDescription) with saving type \(M.self)")
         }
     }
+    
+    
+    
+    ///  Save or update object
+    ///
+    /// - Parameter model: model
+    /// - Parameter update:  update flag. default is false
+    public static func saveObject<M: Object>(_ model: M, withUpdate update: Bool = false) {
+        do {
+            let r = try Realm()
+            try r.write {
+                r.add(model, update: update)
+            }
+        } catch {
+            Log.error.log("RealmProtocol: error \(error.localizedDescription) with saving type \(M.self)")
+        }
+    }
+    
 
     /// Remove all data from table
     ///

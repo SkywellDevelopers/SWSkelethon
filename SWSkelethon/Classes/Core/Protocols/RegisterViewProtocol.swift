@@ -70,10 +70,21 @@ public extension RegisterViewProtocol where Self:UIView {
         }
 
         view.frame = bounds
-        view.backgroundColor = .white
+        view.backgroundColor = .clear
 
         view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         addSubview(view)
         return view
+    }
+}
+
+
+/// XibProtocol. 
+/// Init view from XIB by name
+public protocol XibProtocol {}
+
+public extension XibProtocol where Self: UIViewController {
+    public static func initiateFromXIB() -> Self {
+        return Self.init(nibName: String(describing: Self.self), bundle: Bundle.main)
     }
 }

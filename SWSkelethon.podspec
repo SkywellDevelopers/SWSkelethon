@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'SWSkelethon'
-s.version          = '0.5.1'
+s.version          = '0.6.0'
 s.summary          = 'Core protocols'
 
 # This description is used to generate tags and improve search results.
