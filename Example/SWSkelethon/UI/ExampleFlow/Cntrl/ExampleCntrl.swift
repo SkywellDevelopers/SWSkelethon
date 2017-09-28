@@ -34,7 +34,7 @@ class ExampleCntrl: UIViewController {
     /* view model */
     var viewModel : ExampleListViewModel! {
         didSet {
-            self.viewModel!.viewModelChanged = { Void in
+            self.viewModel!.viewModelChanged = { 
                 switch self.viewModel!.requestStatus {
                 case .loading:
                     Log.debug.log("Loading")

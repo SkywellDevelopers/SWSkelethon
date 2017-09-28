@@ -33,7 +33,7 @@ class ExampleListViewModel : ViewModelProtocol {
             self.viewModelChanged?()
         }
     }
-    var viewModelChanged: ((Void) -> ())?
+    var viewModelChanged: (() -> ())?
     
     required init() {
         self.model = Model()

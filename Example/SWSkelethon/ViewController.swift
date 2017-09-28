@@ -9,8 +9,6 @@
 import UIKit
 import SWSkelethon
 import RealmSwift
-import RxSwift
-import RxCocoa
 
 class ViewController: BaseViewController, UIViewContent {
     
@@ -24,7 +22,6 @@ class ViewController: BaseViewController, UIViewContent {
         
         viewContent = EXView(frame: self.view.bounds) // DI
         
-        Observable.just("")
     }
 
     override func didReceiveMemoryWarning() {
