@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'SWSkelethon'
-s.version          = '0.6.2'
+s.version          = '0.7.1'
 s.summary          = 'Core protocols'
 
 # This description is used to generate tags and improve search results.
@@ -23,11 +23,11 @@ s.ios.deployment_target = '9.0'
 s.source_files     = 'SWSkelethon/Classes/**/*'
 s.framework        = 'Foundation'
 #s.ios.xcconfig     = { "OTHER_SWIFT_FLAGS[config=Debug]" => "-D DEBUG" }
-
+#s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 s.dependency 'Alamofire', '4.5.1'
-s.dependency 'AlamofireImage', '3.3.0'
-s.dependency 'RxSwift',    '3.2'
-s.dependency 'RxCocoa',    '3.2'
+s.dependency 'AlamofireImage', '3.3'
+s.dependency 'RxSwift', '~> 4.0.0-beta.0'
+s.dependency 'RxCocoa', '~> 4.0.0-beta.0'
 s.dependency 'RealmSwift', '2.10.1'
 end

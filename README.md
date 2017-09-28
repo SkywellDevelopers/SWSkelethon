@@ -18,7 +18,9 @@ SWSkelethon is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SWSkelethon'
+pod 'SWSkelethon', '0.6.2' // for Swift 3
+pod 'SWSkelethon', '~> 0.7' // for Swift 4
+
 ```
 
 ## Usage

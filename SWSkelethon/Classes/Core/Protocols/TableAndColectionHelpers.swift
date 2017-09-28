@@ -62,6 +62,15 @@ public extension UITableView {
     public func register<T: UITableViewCell>(_: T.Type) where T: RegisterCellProtocol {
         self.register(T.self, forCellReuseIdentifier: T.reuseIdentifier)
     }
+    
+    /// Register several cell
+    ///
+    /// - Parameter _: UITableViewCell.Type that conform RegisterCellProtocol
+    public func register<T: UITableViewCell>(_ cells : [T.Type]) where T: RegisterCellProtocol {
+        cells.forEach { (cell) in
+            self.register(cell)
+        }
+    }
 
     /// Register cell with NIB name. Nib name must be equal to ClassName.
     ///
