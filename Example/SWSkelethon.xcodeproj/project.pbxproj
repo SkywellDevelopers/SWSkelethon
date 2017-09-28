@@ -25,6 +25,8 @@
 		842C601F1E77E8420046997F /* ExampleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C600B1E77E8420046997F /* ExampleRepository.swift */; };
 		842C60201E77E8420046997F /* ExampleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C600D1E77E8420046997F /* ExampleListViewModel.swift */; };
 		842C60211E77E8420046997F /* ExampleCntrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C60121E77E8420046997F /* ExampleCntrl.swift */; };
+		8473C4C81F72AFB400D7F6FB /* EXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473C4C71F72AFB400D7F6FB /* EXView.swift */; };
+		8473C4CA1F72AFBC00D7F6FB /* EXView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8473C4C91F72AFBC00D7F6FB /* EXView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		842C600B1E77E8420046997F /* ExampleRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleRepository.swift; sourceTree = "<group>"; };
 		842C600D1E77E8420046997F /* ExampleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleListViewModel.swift; sourceTree = "<group>"; };
 		842C60121E77E8420046997F /* ExampleCntrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCntrl.swift; sourceTree = "<group>"; };
+		8473C4C71F72AFB400D7F6FB /* EXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EXView.swift; sourceTree = "<group>"; };
+		8473C4C91F72AFBC00D7F6FB /* EXView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EXView.xib; sourceTree = "<group>"; };
 		99EA5CD4B998380139E12C2D /* SWSkelethon.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SWSkelethon.podspec; path = ../SWSkelethon.podspec; sourceTree = "<group>"; };
 		AE72C460C5E03520EC036085 /* Pods-SWSkelethon_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWSkelethon_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWSkelethon_Example/Pods-SWSkelethon_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BBC38E1ACD21826C4038B455 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -334,6 +338,8 @@
 		842C60151E77E8420046997F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8473C4C71F72AFB400D7F6FB /* EXView.swift */,
+				8473C4C91F72AFBC00D7F6FB /* EXView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -441,6 +447,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				8473C4CA1F72AFBC00D7F6FB /* EXView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,13 +497,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWSkelethon_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B78815CCF73F127752FD64CF /* [CP] Embed Pods Frameworks */ = {
@@ -505,9 +515,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SWSkelethon_Example/Pods-SWSkelethon_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SWSkelethon/SWSkelethon.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWSkelethon.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -520,13 +545,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWSkelethon_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E0D71AA9FFCC7D37AF55C490 /* [CP] Copy Pods Resources */ = {
@@ -551,6 +579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8473C4C81F72AFB400D7F6FB /* EXView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				842C60211E77E8420046997F /* ExampleCntrl.swift in Sources */,
 				842C601F1E77E8420046997F /* ExampleRepository.swift in Sources */,
