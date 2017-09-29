@@ -25,7 +25,7 @@ public protocol ViewModelProtocol: UpdateProtocol {
     /// Status for current request
     var requestStatus: RequestStatus {get }
     /// Function for force view model update
-    var viewModelChanged: ((Void) -> Void)? {get set}
+    var viewModelChanged: (() -> Void)? {get set}
     /// Your model variable
     var model: Model {get}
     /// init functions

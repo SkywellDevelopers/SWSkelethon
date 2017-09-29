@@ -2,18 +2,18 @@ PODS:
   - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
-  - Realm (2.10.1):
-    - Realm/Headers (= 2.10.1)
-  - Realm/Headers (2.10.1)
-  - RealmSwift (2.10.1):
-    - Realm (= 2.10.1)
+  - Realm (2.10.2):
+    - Realm/Headers (= 2.10.2)
+  - Realm/Headers (2.10.2)
+  - RealmSwift (2.10.2):
+    - Realm (= 2.10.2)
   - RxCocoa (4.0.0-beta.0):
     - RxSwift (~> 4.0.0-beta.0)
   - RxSwift (4.0.0-beta.0)
-  - SWSkelethon (0.7.0):
+  - SWSkelethon (0.7.3):
     - Alamofire (= 4.5.1)
     - AlamofireImage (= 3.3)
-    - RealmSwift (= 2.10.1)
+    - RealmSwift (= 2.10.2)
     - RxCocoa (~> 4.0.0-beta.0)
     - RxSwift (~> 4.0.0-beta.0)
 
@@ -27,11 +27,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
-  Realm: fc7a317a5c2c9ba91f5f235ede4e2ea76e9eba0c
-  RealmSwift: 505ed6c15942a2e76f5cfa78a8667cfa997ee75b
+  Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
+  RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
   RxCocoa: 8d809675f4e89c5c4c5a6900bbd11fe632ad5d86
   RxSwift: e0899fae37065c16db976cc5e3c957e4e388869c
-  SWSkelethon: 85030f09a864719c2fc6e7d46e1fedf8ab2f9040
+  SWSkelethon: 965251bd333e84984d6e5b31f56cd8d4c0b305d3
 
 PODFILE CHECKSUM: c4e908d7539efab0a5b7d165d902f38c8bf6e07f
 
