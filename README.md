@@ -19,7 +19,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'SWSkelethon', '0.6.2' // for Swift 3
-pod ‘SWSkelethon’, :git => ‘https://github.com/SkywellDevelopers/SWSkelethon', :branch => ‘swift_4’ // for Swift 4
+pod 'SWSkelethon', :git => 'https://github.com/SkywellDevelopers/SWSkelethon', :branch => 'swift_4' // for Swift 4
 
 ```
 
